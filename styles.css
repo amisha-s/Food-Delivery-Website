@@ -24,7 +24,12 @@ body{
     margin: auto;
     padding-inline: 1.5rem;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+}
 /* --------------Header Styling------------------- */
 a{
     font-size: 1.1rem;
@@ -132,4 +137,48 @@ list-style: none;
        left: 50%;
 
     }
+}
+.hero-section{
+    min-height: calc(100vh-14vh);
+    /* background-color: gold; */
+}
+.hero-section span{
+    color: var(--gold-finger);
+}
+.content,.image-container{
+    flex: 1;
+    flex-basis: 300px;
+}
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+
+}
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.para{
+    margin-block:2rem ;
+    max-width: 550px;
+}
+.social-links{
+    background-color: var(--hint-yellow);
+    width:3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px rgba(0, 0, 0, 0.607) 8px 8px 8px inset;
+    transition: all .5s ease-in-out;
+}
+.gap-2{
+    gap:2rem
+}
+.social-links:hover{
+    color: var(--pure-white);
+    background-color: var(--lead);
 }
